@@ -64,7 +64,7 @@ form.addEventListener('submit', event => {
 
         createGallery(data.hits);
     })
-    .catch(err => {
+    .catch(error => {
         console.error('API error:', error);
         notifyError(error.message || 'Failed to fetch images.');
     })
